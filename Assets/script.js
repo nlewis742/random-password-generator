@@ -18,11 +18,11 @@ let tempPossibilities = "";
 // - for loop to add more characters upto desired length from tempPossibilities
 function generatePassword() {
   var numPasswordLength = prompt(
-    "Pick a password length between 8 and 120 characters."
+    "Pick a password length between 8 and 128 characters."
   );
 
   if (numPasswordLength < 8 || numPasswordLength > 128) {
-    alert("please pick a value between 8 and 120.");
+    alert("please pick a value between 8 and 128.");
     return;
   }
 
@@ -90,7 +90,7 @@ function generatePassword() {
 
 console.log(password);
 
-  // Shuffles through the password variable to ensure string is randomized and varied 
+  // Shuffles through the password variable to randomize further 
   password = password.split('').sort(function(){return 0.5-Math.random()}).join('');
 
   console.log(password);
