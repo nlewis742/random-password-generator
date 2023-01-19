@@ -6,8 +6,8 @@ An application that enables users to generate random passwords based on criteria
 
 ## Image
 
-![alt text](./assets/images/nlewis742.github.io_natasha_portfolio_%20(1).png)
+![alt text](./Assets/_C__Users_16127_bootcamp_myhomework_random-password-generator_index.html.png)
 
 ## Link
 
-https://nlewis742.github.io/natasha_portfolio/
+https://nlewis742.github.io/random-password-generator/
