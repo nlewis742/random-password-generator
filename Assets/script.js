@@ -85,22 +85,27 @@ function generatePassword() {
   }
 
   return password;
+
  
 }
 
-console.log(password);
 
-  // Shuffles through the password variable to randomize further 
-  password = password.split('').sort(function(){return 0.5-Math.random()}).join('');
 
-  console.log(password);
+
+
+
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
+  console.log(password);
   var passwordText = document.querySelector("#password");
-
+  // Shuffles through the password variable to randomize further 
+  password = password.split('').sort(function(){return 0.5-Math.random()}).join('');
   passwordText.value = password;
+  console.log(password);
 }
+
+
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
